@@ -4,5 +4,21 @@
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    text-shadow: white 1px 1px;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-body {
+    color: black;
+    position: relative;
+}
+
+.bg {
+    opacity: 0.3;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
 }
