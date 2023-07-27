@@ -7,7 +7,7 @@
 
 $family-sans-serif: "Poppins", sans-serif;
 $fullhd-enabled: false;
-$section-padding: 2rem 1.5rem 0.5rem 1.5rem;
+$section-padding: 1.5rem;
 
 @import "bulma";
 
@@ -24,4 +24,8 @@ $section-padding: 2rem 1.5rem 0.5rem 1.5rem;
     color: black;
     position: relative;
   }
+}
+
+main {
+  padding: 1.5rem 0;
 }
