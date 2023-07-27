@@ -3,18 +3,13 @@
     <h2 class="title">Schedule</h2>
     <table class="table is-striped is-hoverable">
       <tbody>
+        {% for item in site.data.schedule %}
         <tr>
-          <td>10:00</td>
-          <td>Arrivals</td>
+          <td>{{ item.time }}</td>
+          <td>{{ item.session }}</td>
+          <td>{{ item.notes }}</td>
         </tr>
-        <tr>
-          <td>10:15</td>
-          <td>Session 1: Planting Principles (Tom Simpson)</td>
-        </tr>
-        <tr>
-          <td>11:00</td>
-          <td>Coffee</td>
-        </tr>
+        {% endfor %}
       </tbody>
     </table>
   </div>

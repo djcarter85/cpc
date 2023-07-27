@@ -7,10 +7,11 @@
 
 $family-sans-serif: "Poppins", sans-serif;
 $fullhd-enabled: false;
+$section-padding: 2rem 1.5rem 0.5rem 1.5rem;
 
 @import "bulma";
 
-.hero {
+.header {
   background-image: url("../images/header.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -18,9 +19,9 @@ $fullhd-enabled: false;
   text-align: center;
   overflow: hidden;
   position: relative;
-}
 
-.hero-body {
-  color: black;
-  position: relative;
+  .hero-body {
+    color: black;
+    position: relative;
+  }
 }
