@@ -6,8 +6,12 @@
         {% for item in site.data.schedule %}
         <tr>
           <td>{{ item.time }}</td>
-          <td>{{ item.session }}</td>
-          <td>{{ item.notes }}</td>
+          <td>
+            <h3 class="has-text-weight-bold mb-0">{{ item.session }}</h3>
+            {% if item.notes %}
+            {{ item.notes }}
+            {% endif %}
+          </td>
         </tr>
         {% endfor %}
       </tbody>
