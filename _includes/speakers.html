@@ -1,31 +1,29 @@
 <section class="section">
-  <div class="container">
-    <h2 class="title">Speakers</h2>
+  <h2 class="title">Speakers</h2>
 
-    <div class="columns">
+  <div class="columns">
 
-      {% for speaker in site.data.speakers %}
+    {% for speaker in site.data.speakers %}
 
-      <div class="column">
-        <div class="card">
-          <div class="card-image">
-            <figure class="image is-3by2">
-              <img src="{{ site.baseurl }}/assets/images/{{ speaker.image }}" alt="Photo of {{ speaker.name }}">
-            </figure>
-          </div>
-          <div class="card-content">
-            <p class="title is-4">{{ speaker.name }}</p>
-            <p class="subtitle is-6">{{ speaker.church }}</p>
+    <div class="column">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-3by2">
+            <img src="{{ site.baseurl }}/assets/images/{{ speaker.image }}" alt="Photo of {{ speaker.name }}">
+          </figure>
+        </div>
+        <div class="card-content">
+          <p class="title is-4">{{ speaker.name }}</p>
+          <p class="subtitle is-6">{{ speaker.church }}</p>
 
-            <div class="content">
-              {{ speaker.blurb }}
-            </div>
+          <div class="content">
+            {{ speaker.blurb }}
           </div>
         </div>
       </div>
-
-      {% endfor %}
-
     </div>
+
+    {% endfor %}
+
   </div>
 </section>
