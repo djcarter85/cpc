@@ -6,6 +6,7 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito:500,700,800");
 
 $family-sans-serif: "Nunito", sans-serif;
+$widescreen-enabled: false;
 $fullhd-enabled: false;
 $header-padding-y: 1.5rem;
 $main-padding-x: 1.5rem;
@@ -16,6 +17,7 @@ $content-heading-weight: 800;
 $body-weight: 500;
 $weight-bold: 800;
 
+$table-background-color: transparent;
 $green: rgb(111, 156, 87);
 $link: $green;
 $link-hover: $link;
