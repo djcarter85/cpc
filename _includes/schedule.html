@@ -1,34 +1,24 @@
 <section class="section">
   <div class="container">
-    <div class="columns">
-      <div class="column content">
-
-
-        <h2 class="title">Cost</h2>
-
-        <p>Cost The event is free, but a donation of £3 is invited towards lunch</p>
-      </div>
-
-      <div class="column content">
-        <h2 class="title">Schedule</h2>
-        <table class="table is-striped is-hoverable is-fullwidth">
-          <tbody>
-            {% for item in site.data.schedule %}
-            <tr>
-              <td>{{ item.time }}</td>
-              <td>
-                <div class="has-text-weight-bold mb-1">{{ item.session }}</div>
-                {% if item.notes %}
-                <div>
-                  {{ item.notes }}
-                </div>
-                {% endif %}
-              </td>
-            </tr>
-            {% endfor %}
-          </tbody>
-        </table>
-      </div>
+    <div class="content">
+      <h2 class="title">Schedule</h2>
+      <table class="table is-striped is-hoverable is-fullwidth">
+        <tbody>
+          {% for item in site.data.schedule %}
+          <tr>
+            <td>{{ item.time }}</td>
+            <td>
+              <div class="has-text-weight-bold mb-1">{{ item.session }}</div>
+              {% if item.notes %}
+              <div>
+                {{ item.notes }}
+              </div>
+              {% endif %}
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
     </div>
   </div>
 </section>
