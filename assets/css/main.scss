@@ -14,6 +14,7 @@ $section-padding-desktop: 1.25rem $main-padding-x;
 
 $content-heading-weight: 800;
 $body-weight: 500;
+$weight-bold: 800;
 
 $green: rgb(111, 156, 87);
 $link: $green;
@@ -28,6 +29,17 @@ header {
 
 #logo {
   max-height: 25vh;
+}
+
+main {
+  .section:nth-child(odd) {
+    background-color: findLightColor($green);
+  }
+}
+
+#intro {
+  text-align: center;
+  font-size: $size-medium;
 }
 
 a {
