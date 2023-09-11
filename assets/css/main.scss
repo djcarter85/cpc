@@ -9,8 +9,8 @@ $family-sans-serif: "Nunito", sans-serif;
 $fullhd-enabled: false;
 $header-padding-y: 1.5rem;
 $main-padding-x: 1.5rem;
-$section-padding: 0.75rem $main-padding-x;
-$section-padding-desktop: 1.25rem $main-padding-x;
+$section-padding: 1.5rem $main-padding-x;
+$section-padding-desktop: $section-padding;
 
 $content-heading-weight: 800;
 $body-weight: 500;
@@ -38,6 +38,11 @@ main {
 }
 
 #intro {
+  text-align: center;
+  font-size: $size-large;
+}
+
+#key-details {
   text-align: center;
   font-size: $size-medium;
 }
