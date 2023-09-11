@@ -9,27 +9,20 @@
 $family-sans-serif: "Noto Sans", sans-serif;
 $family-serif: "Merriweather", serif;
 $fullhd-enabled: false;
-$section-padding: 0.75rem 1.5rem;
+$header-padding-y: 1.5rem;
+$main-padding-x: 1.5rem;
+$section-padding: 0.75rem $main-padding-x;
 $family-primary: $family-serif;
 $title-family: $family-sans-serif;
 
 @import "bulma";
 
-.header {
-  background-image: url("../images/header.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+header {
   text-align: center;
-  overflow: hidden;
-  position: relative;
-
-  .hero-body {
-    color: black;
-    position: relative;
-  }
+  padding: $header-padding-y $main-padding-x;
 }
 
-main {
-  padding: 1.5rem 0;
+#logo {
+  max-height: 25vh;
 }
+
