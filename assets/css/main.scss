@@ -18,8 +18,12 @@ $body-weight: 500;
 $weight-bold: 800;
 
 $table-background-color: transparent;
+
 $green: rgb(111, 156, 87);
+
+$primary: $green;
 $link: $green;
+
 $link-hover: $link;
 
 @import "bulma";
@@ -35,7 +39,7 @@ header {
 
 main {
   .section:nth-child(odd) {
-    background-color: findLightColor($green);
+    background-color: $primary-light;
   }
 }
 
