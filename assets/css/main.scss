@@ -3,7 +3,7 @@
 
 @charset "utf-8";
 
-@import url("https://fonts.googleapis.com/css?family=Nunito:500,700,800");
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,500,700,800");
 
 $family-sans-serif: "Nunito", sans-serif;
 $widescreen-enabled: false;
@@ -18,6 +18,7 @@ $weight-bold: 800;
 
 $table-background-color: transparent;
 
+$dark-green: rgb(64, 96, 47);
 $green: rgb(111, 156, 87);
 
 $primary: $green;
@@ -45,6 +46,14 @@ main {
 #intro {
   text-align: center;
   font-size: $size-large;
+  background-color: $dark-green;
+  color: $grey-lightest;
+  font-weight: 400;
+  
+  strong {
+    color: $grey-lightest;
+    font-weight: 700;
+}
 }
 
 #key-details {
