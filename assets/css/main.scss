@@ -11,7 +11,6 @@ $fullhd-enabled: false;
 $header-padding-y: 1.5rem;
 $main-padding-x: 1.5rem;
 $section-padding: 1.5rem $main-padding-x;
-$section-padding-desktop: $section-padding;
 
 $content-heading-weight: 800;
 $body-weight: 500;
@@ -58,6 +57,12 @@ a {
 
   &:hover {
     text-decoration: none;
+  }
+}
+
+.content {
+  .title {
+    margin-bottom: 1rem;
   }
 }
 
