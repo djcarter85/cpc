@@ -49,16 +49,21 @@ main {
   background-color: $dark-green;
   color: $grey-lightest;
   font-weight: 400;
-  
+
   strong {
     color: $grey-lightest;
     font-weight: 700;
-}
+  }
 }
 
 #key-details {
   text-align: center;
   font-size: $size-medium;
+}
+
+#form {
+  width: 100%;
+  height: 50vh;
 }
 
 a {
