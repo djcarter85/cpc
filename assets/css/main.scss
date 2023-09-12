@@ -61,6 +61,27 @@ main {
   font-size: $size-medium;
 }
 
+footer {
+  padding: $header-padding-y $main-padding-x;
+  background-color: $primary-light;
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+#plant-image {
+  width: 60px;
+}
+
+#cgp-logo {
+  width: 200px;
+}
+
 a {
   text-decoration: underline;
 
