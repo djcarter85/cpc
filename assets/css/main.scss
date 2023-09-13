@@ -28,6 +28,12 @@ $link-hover: $link;
 
 @import "bulma";
 
+body {
+  // Required to avoid horizontal scrollbars appearing when sections have not
+  // been animated yet.
+  overflow-x: hidden;
+}
+
 header {
   text-align: center;
   padding: $header-padding-y $main-padding-x;
@@ -49,11 +55,11 @@ main {
   background-color: $dark-green;
   color: $grey-lightest;
   font-weight: 400;
-  
+
   strong {
     color: $grey-lightest;
     font-weight: 700;
-}
+  }
 }
 
 #key-details {
