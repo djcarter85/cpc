@@ -3,39 +3,41 @@
 
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cambridgeshire Planting Collective</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ site.baseurl }}/assets/css/main.css?v={{ site.time | date: '%s' }}"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cambridgeshire Planting Collective</title>
-  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/main.css?v={{ site.time | date: '%s' }}">
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
-</head>
+  <body>
+    {% include header.html %}
 
-<body>
+    <main>
+      {% include intro.html %}
+      {% include description.html %}
+      {% include pictures.html %}
+      {% include contact.html %}
+    </main>
 
-  {% include header.html %}
+    {% include footer.html %}
 
-  <main>
-    {% include intro.html %}
-    {% include key-details.html %}
-    {% include description.html %}
-    {% include speakers.html %}
-    {% include schedule.html %}
-    {% include key-info.html %}
-    {% include signup.html %}
-  </main>
+    <script
+      src="https://kit.fontawesome.com/09ef0da7c0.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
-  {% include footer.html %}
-
-  <script src="https://kit.fontawesome.com/09ef0da7c0.js" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      easing: 'ease-in-out',
-      duration: 500
-    });
-  </script>
-</body>
-
+    <script>
+      AOS.init({
+        easing: "ease-in-out",
+        duration: 500,
+      });
+    </script>
+  </body>
 </html>
